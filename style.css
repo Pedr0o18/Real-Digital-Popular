@@ -2,8 +2,14 @@
 
 :root {
     --cor1: #02284C;
-    --cor1: #19324A;
-    --cor1: #013E4A;
+    --cor2: #19324A;
+    --cor3: #013E4A;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,6 +19,23 @@ body {
     text-align: center;
     height: 100vh;
     width: 100vw;
+}
+
+header {
+    width: 100vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 0.8em;
+    text-align: left;
+    padding: 15px;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header > img {
+    width: 40px;
+    height: 40px;
 }
 
 section#sec1 {
@@ -31,13 +54,41 @@ section#sec1 > h2 {
     margin-bottom: 20px;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+section#sec2 {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    width: 100vw;
+    padding: 80px;
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
-img {
-    height: 100px;
-    width: 100px;
+section#sec2 > h2 {
+    margin-bottom: 20px;
+}
+
+section#sec3 {
+    width: 100vw;
+    padding: 80px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 5px 5px 5px black;
+    background-image: url(imagens/fundo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+section#sec3 > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+
+section#sec3 > img:hover {
+    width: 160px;
+    height: 160px;
+    margin: 25px;
+    transition: 0.3s;
 }
