@@ -85,10 +85,3 @@ section#sec3 > img {
     height: 150px;
     margin: 30px;
 }
-
-section#sec3 > img:hover {
-    width: 160px;
-    height: 160px;
-    margin: 25px;
-    transition: 0.3s;
-}
