@@ -31,3 +31,8 @@ div {
 h2 {
     margin-bottom: 10px;
 }
+
+button {
+    width: 50vw;
+    height: 40px;
+}
